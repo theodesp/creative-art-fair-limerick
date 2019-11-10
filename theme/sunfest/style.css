@@ -178,7 +178,8 @@ body {
 
 .site-navigation ul li a {
     display: block;
-    color: #03070c;
+    color: #00d0ff;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
     transition: all 0.35s;
     text-decoration: none;
     font-size: 14px;
@@ -228,13 +229,14 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    /* background: url("images/cover.jpg") no-repeat; */
+    background: url("images/cover.png") no-repeat;
     background-size: cover;
 }
 
 .hero-content .entry-header {
+    margin-top: 40px;
     position: relative;
-    text-align: center;
+    text-align: right;
 }
 
 .hero-content .entry-header .header-logo {
@@ -255,11 +257,10 @@ body {
 .hero-content .entry-header .entry-meta-date {
     position: absolute;
     width: 100%;
-    top: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    color: #03070c;
+    color: #edfc64;
     text-align: center;
 }
 
@@ -277,7 +278,7 @@ body {
 ## countdown
 ------------------------------------------------------------*/
 .countdown {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .countdown-holder {
@@ -293,14 +294,14 @@ body {
     font-size: 72px;
     font-weight: 600;
     line-height: 1;
-    color: hsl(0, 0%, 100%);
+    color: #7CB9E8;
 }
 
 .countdown-holder label {
     display: block;
     font-size: 18px;
     font-weight: 600;
-    color: hsl(0, 0%, 100%);
+    color: #7CB9E8;
 }
 
 /*------------------------------------------------------------
