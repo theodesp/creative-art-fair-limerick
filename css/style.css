@@ -2,14 +2,19 @@
   position: absolute;
   right: 0;
   top: 25vh;
-  background: url("../images/logo-2.png");
+  background: url("../images/logo-2.png") no-repeat;
   width: 500px;
   height: 272px;
 }
 
+@media screen and (max-width: 992px) {
+    .header-logo {
+        top: 0;
+        background-position: center;
+        width: 100%;
+    }
+}
 
-@media screen and (max-width: 960px) {
-  .header-logo {
-    background: url("../images/logo-light.png");
-  }
+span.brand {
+    color: #edfc64;
 }

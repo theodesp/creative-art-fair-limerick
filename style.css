@@ -178,12 +178,16 @@ body {
 
 .site-navigation ul li a {
     display: block;
-    color: #00d0ff;
-    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+    color: black;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
     transition: all 0.35s;
     text-decoration: none;
     font-size: 14px;
     padding-left: 40px;
+}
+
+.site-navigation-light ul li a {
+    color: white;
 }
 
 @media screen and (min-width: 992px) {
@@ -218,10 +222,6 @@ body {
     .site-navigation ul li {
         padding: 0;
     }
-
-    .site-navigation ul li:nth-last-of-type(1) {
-        padding-left: 60px;
-    }
 }
 
 /*------------------------------------------------------------
@@ -229,7 +229,6 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding-top: 55vh;
-    background: url("images/cover.png") no-repeat;
     background-size: cover;
 }
 
@@ -267,13 +266,16 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+    .hero-content {
+        background: url("images/cover.png") no-repeat;
+    }
     .hero-content .entry-header h2 {
         font-size: 172px;
     }
 
     .hero-content .entry-header .entry-meta-date {
         top: -60px;
-        color: #edfc64;
+        color: black;
     }
 }
 
@@ -297,14 +299,14 @@ body {
     font-size: 72px;
     font-weight: 600;
     line-height: 1;
-    color: #7CB9E8;
+    color: black;
 }
 
 .countdown-holder label {
     display: block;
     font-size: 18px;
     font-weight: 600;
-    color: #7CB9E8;
+    color: black;
 }
 
 /*------------------------------------------------------------
@@ -316,7 +318,6 @@ body {
 }
 
 .hero-content .entry-footer .btn {
-    background: hsl(0, 0%, 100%);
     padding: 16px 40px;
     border-radius: 0;
     margin-right: 20px;
@@ -325,18 +326,17 @@ body {
 }
 
 .hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
+    text-decoration: underline;
 }
 
 /*------------------------------------------------------------
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
     width: 100%;
     padding-bottom: 120px;
-    background: url("images/middle-cover.jpg") no-repeat;
+    background: url("images/abstract.png") no-repeat;
     background-size: 100% auto;
 }
 
@@ -366,6 +366,8 @@ body {
 }
 
 .lineup-artists-headline .entry-title h2 {
+    padding: 10px;
+
     width: 100%;
     font-size: 48px;
     font-weight: 600;
@@ -499,11 +501,15 @@ body {
 }
 
 .the-complete-lineup .entry-title h2 {
+    padding: 10px;
+
     width: 100%;
     margin: 0;
     font-size: 48px;
     font-weight: 600;
     color: hsl(0, 0%, 0%);
+
+    text-align: center;
 }
 
 /*------------------------------------------------------------
@@ -552,6 +558,10 @@ body {
     font-weight: 600;
     color: hsl(0, 0%, 2%);
     text-align: center;
+}
+
+.the-complete-lineup-artists .artist-single h2:first-line {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -840,7 +850,8 @@ body {
 }
 
 .site-footer .footer-cover-title h2 {
-    font-size: 20vw;
+    font-size: 10vw;
+    word-break: break-all;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
