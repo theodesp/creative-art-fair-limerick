@@ -372,13 +372,43 @@ body {
     font-size: 48px;
     font-weight: 600;
     color: hsl(0, 0%, 0%);
+
+    text-align: center;
+}
+
+.lineup-artists-headline .entry-description {
+    padding: 50px;
+}
+
+.lineup-artists-headline .entry-description p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: hsl(0, 0%, 60%);
+    line-height: 2;
+
+    text-align: center;
+}
+
+.lineup-artists-headline .entry-description .featured-images {
+    justify-content: center;
+}
+
+.lineup-artists-headline .entry-description .featured-images figure {
+    max-width: 250px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.lineup-artists-headline .entry-description .featured-images img  {
+    width: 100%;
+    max-width: 100%;
 }
 
 /*------------------------------------------------------------
 ## lineup-artists
 ------------------------------------------------------------*/
 .lineup-artists {
-    padding-top: 80px;
 }
 
 .lineup-artists .featured-image {
@@ -400,6 +430,7 @@ body {
 ------------------------------------------------------------*/
 .lineup-artists .lineup-artists-wrap {
     margin-top: 80px;
+    min-height: 400px;
 }
 
 .lineup-artists .lineup-artists-wrap .lineup-artists-description {
@@ -409,6 +440,7 @@ body {
 
 .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
     position: relative;
+    min-height: 100%;
     padding: 30px;
     background: hsl(0, 0%, 100%);
     box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
@@ -438,7 +470,6 @@ body {
 
 @media screen and (min-width: 768px) {
     .lineup-artists .lineup-artists-wrap {
-        margin-top: 30px;
     }
 
     .lineup-artists .featured-image {
@@ -452,13 +483,9 @@ body {
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
         position: absolute;
         z-index: 99;
-        top: 100px;
-        left: -75px;
-        width: calc(100% + 75px);
     }
 
     .lineup-artists .lineup-artists-wrap:nth-of-type(even) .lineup-artists-description-container {
-        right: -75px;
         left: auto;
     }
 
@@ -478,10 +505,6 @@ body {
 @media screen and (min-width: 1200px) {
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
         max-width: 660px;
-    }
-
-    .lineup-artists .lineup-artists-wrap:nth-last-of-type(1) {
-        margin-left: 80px;
     }
 }
 
@@ -829,7 +852,7 @@ body {
 .site-footer {
     position: relative;
     padding: 40px 0 30px;
-    background: url(images/footer-back.png) no-repeat;
+    background: url(images/cover.png) no-repeat;
     background-size: cover;
 }
 
@@ -851,7 +874,6 @@ body {
 
 .site-footer .footer-cover-title h2 {
     font-size: 10vw;
-    word-break: break-all;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
@@ -1587,14 +1609,18 @@ body {
 # contact-page
 ------------------------------------------------------------*/
 .contact-page {
-    background: url("images/contact-background-image.jpg") no-repeat;
 }
 
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url("images/contact-us-back.png") no-repeat;
+    background-color: black;
+}
+
+.contact-page .site-header .logo {
+    width: 250px;
+
 }
 
 .contact-page .main-content {
@@ -1613,6 +1639,7 @@ body {
 
 .contact-page .contact-details {
     margin-top: 70px;
+    padding-bottom: 70px;
 }
 
 .contact-page .contact-details .contact-medium {
@@ -1631,14 +1658,14 @@ body {
 
 .contact-page .contact-details .contact-medium .entry-title {
     margin: 0;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     color: #040608;
 }
 
 .contact-page .contact-details .contact-medium .entry-content {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #989898;
 }
