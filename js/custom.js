@@ -5,7 +5,7 @@
     // Main Navigation
     $( '.hamburger-menu' ).on( 'click', function() {
         $(this).toggleClass('open');
-        $('.site-navigation').toggleClass('show');
+        $('.site-navigation').first().toggleClass('show');
     });
 
     var countdown_date = $('.countdown').data("date");

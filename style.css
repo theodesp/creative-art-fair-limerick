@@ -96,7 +96,7 @@ body {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #fff;
+    background: black;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -139,7 +139,7 @@ body {
 .site-navigation {
     position: absolute;
     top: -11px;
-    right: 15px;
+    right: 25px;
     z-index: 9999;
     width: 100%;
     height: 22px;
@@ -186,8 +186,20 @@ body {
     padding-left: 40px;
 }
 
+.site-navigation.show ul li a {
+    color: #007bff;
+}
+
 .site-navigation-light ul li a {
     color: white;
+}
+
+.site-navigation-extras {
+    margin-top: 10px;
+}
+
+.site-navigation-extras ul li a {
+    color: #007bff;
 }
 
 @media screen and (min-width: 992px) {
